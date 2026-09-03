@@ -1,10 +1,15 @@
 import sys
 sys.path.append('src')
 
-from utils import square, is_even, celsius_to_fahrenheit
+from utils import square, is_even, celsius_to_fahrenheit, greet
 
 def main():
     print("--- Python Lab Program ---")
+    
+    # Collect name for greeting
+    name_input = input("Enter your name: ")
+    print(greet(name_input))
+    
     try:
         user_input = float(input("Enter a number: "))
         
